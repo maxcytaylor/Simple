@@ -22,7 +22,6 @@ OS-level virtualization provides several benefits that make it well suited for i
 
 •	High application density per host
 
- 
 OS-Level Virtualization vs. Virtual Machines
 
 Unlike a traditional virtual machine (VM), OS-level virtualization does not create a complete virtual computer for each isolated environment. A virtual machine includes its own guest operating system, while multiple containers share the host operating system’s kernel. Although they share the same kernel, each container remains isolated and can access only its own files, resources, and assigned devices. Because containers do not require separate guest operating systems, they generally start much faster and consume fewer CPU, memory, and storage resources than virtual machines. This allows more applications to run on the same hardware while simplifying software deployment and maintenance. For applications where fast deployment, efficient resource utilization, and high application density are important, OS-level virtualization provides a lightweight alternative to traditional virtual machines.
