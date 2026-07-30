@@ -22,40 +22,39 @@ OS-level virtualization provides several benefits that make it well suited for i
 
 •	High application density per host
 
+
 OS-Level Virtualization vs. Virtual Machines
 
 Unlike a traditional virtual machine (VM), OS-level virtualization does not create a complete virtual computer for each isolated environment. A virtual machine includes its own guest operating system, while multiple containers share the host operating system’s kernel. Although they share the same kernel, each container remains isolated and can access only its own files, resources, and assigned devices. Because containers do not require separate guest operating systems, they generally start much faster and consume fewer CPU, memory, and storage resources than virtual machines. This allows more applications to run on the same hardware while simplifying software deployment and maintenance. For applications where fast deployment, efficient resource utilization, and high application density are important, OS-level virtualization provides a lightweight alternative to traditional virtual machines.
 
 OS-Level Virtualization:
 
-Runs applications in isolated user-space	
+• Runs applications in isolated user-space	
 
-Uses OS-level isolation instead of hardware virtualization	
+• Uses OS-level isolation instead of hardware virtualization	
 
-Shares the host operating system’s kernel
+• Shares the host operating system’s kernel
 
-Uses containers for application isolation	
+• Uses containers for application isolation	
 
-Slices a single host filesystem into isolated view	
+• Slices a single host filesystem into isolated view	
 	
 Virtual Machine:
 
-Runs applications in isolated user-space	
+• Runs applications in isolated user-space	
 
-Uses hardware virtualization for isolation	
+• Uses hardware virtualization for isolation	
 	
-Can run a different kernel than the host	
+• Can run a different kernel than the host	
 	
-Uses a hypervisor to virtualize an entire computer	
+• Uses a hypervisor to virtualize an entire computer	
 	
-Commonly creates entire system snapshots	
+• Commonly creates entire system snapshots	
 
 NOTE:
-
 Containers share the host operating system’s kernel and therefore must use the same operating system family as the host. Virtual machines (such as VMWare), however, can run different operating systems on the same physical hardware.
 
 Sources:
-
 https://en.wikipedia.org/wiki/OS-level_virtualization 
 https://en.wikipedia.org/wiki/Docker_(software) 
 https://www.scalecomputing.com/resources/exploring-uses-benefits-and-types-of-virtual-machines 
